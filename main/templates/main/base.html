@@ -1,52 +1,52 @@
 <html lang="en">
-<head>
-    <title>{% block title %}Carlos's Website{% endblock %}</title>
-    <style type="text/css">
-        .sidenav{
-            height: 100%;
-            width: 160px;
-            position: fixed;
-            z-index: 1;
-            top: 0;
-            left: 0;
-            background-color: #111;
-            overflow-x: hidden;
-            padding-top: 20px;
-        }
+    <head>
+        <title>{% block title %}Carlos's Website{% endblock %}</title>
+        <style type="text/css">
+            .sidenav{
+                height: 100%;
+                width: 160px;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                background-color: #111;
+                overflow-x: hidden;
+                padding-top: 20px;
+            }
 
-        .sidenav a {
-            width: 75px;
-            height: 40px;
-            padding: 6px 8px 6px 16px;
-            text-decoration: none;
-            font-size: 25px;
-            color: #818181;
-            display: block;
-            transition: 0.5s ease-in-out;
-        }
+            .sidenav a {
+                width: 75px;
+                height: 40px;
+                padding: 6px 8px 6px 16px;
+                text-decoration: none;
+                font-size: 25px;
+                color: #818181;
+                display: block;
+                transition: 0.5s ease-in-out;
+            }
 
-        .sidenav a:hover{
-            color: #f1f1f1;
-            font-size: 26px;
-        }
+            .sidenav a:hover{
+                color: #f1f1f1;
+                font-size: 26px;
+            }
 
-        .main{
-            margin-left: 160px;
-            padding: 0px 10px;
-        }
-    </style>
-</head>
-<body>
-    <div class="sidenav">
-        <a href="/">Home</a>
-        <a href="/create">Create</a>
-        <a href="/2">View</a>
+            .main{
+                margin-left: 160px;
+                padding: 0px 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="sidenav">
+            <a href="/">Home</a>
+            <a href="/create">Create</a>
+            <a href="/2">View</a>
 
-    </div>
-    <div id="content", name="content", class="main">
-        {% block content %}
-            <p>{{name}}</p>
-        {% endblock %}
-    </div>
-</body>
+        </div>
+        <div id="content", name="content", class="main">
+            {% block content %}
+                <p>{{name}}</p>
+            {% endblock %}
+        </div>
+    </body>
 </html>
